@@ -1,3 +1,8 @@
+[![HitCount](http://hits.dwyl.io/{chrisbg69}/{Angular-Blog-App}.svg)](http://hits.dwyl.io/{chrisbg69}/{Angular-Blog-App})
+![GitHub language count](https://img.shields.io/github/languages/count/chrisbg69/Angular-Blog-App)
+![GitHub top language](https://img.shields.io/github/languages/top/chrisbg69/Angular-Blog-App)
+![GitHub repo size](https://img.shields.io/github/repo-size/chrisbg69/Angular-Blog-App)
+
 # AngularBlogApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
