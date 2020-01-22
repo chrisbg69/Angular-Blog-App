@@ -13,13 +13,16 @@ import {
 import { AppComponent } from "./app.component";
 import { PostCreateComponent } from "./posts/post-create/post-create.component";
 import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
 import { PostListComponent } from "./posts/post-list/post-list.component";
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
+    FooterComponent,
     PostListComponent
   ],
   imports: [
@@ -30,7 +33,8 @@ import { PostListComponent } from "./posts/post-list/post-list.component";
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
