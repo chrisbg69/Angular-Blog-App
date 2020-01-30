@@ -11,6 +11,10 @@ app.use((req, res,next) => {
 
 });
 
+app.post("/api/posts", (req, res, next) => {
+  console.log();
+});
+
 app.use("/api/posts",(req, res, next) => {
   const posts = [
     {
