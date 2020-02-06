@@ -4,6 +4,10 @@ ul {
   margin: 0;
 }
 
+ul {
+  display: flex;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -12,3 +16,5 @@ a {
 .spacer {
   flex: 1 1 auto;
 }
+
+
