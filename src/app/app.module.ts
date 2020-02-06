@@ -9,7 +9,8 @@ import {
   MatButtonModule,
   MatToolbarModule,
   MatExpansionModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
+  MatPaginatorModule
 } from "@angular/material";
 
 import { AppComponent } from "./app.component";
@@ -40,6 +41,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatExpansionModule,
     MDBBootstrapModule.forRoot(),
     MatProgressSpinnerModule,
+    MatPaginatorModule,
     HttpClientModule
   ],
   providers: [],
