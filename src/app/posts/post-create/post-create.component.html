@@ -1,4 +1,4 @@
-<h2>Create a new post</h2>
+<h3>Create a new post</h3>
 <mat-card>
   <mat-spinner *ngIf="isLoading"></mat-spinner>
   <form [formGroup]="form" (submit)="onSavePost()" *ngIf="!isLoading">

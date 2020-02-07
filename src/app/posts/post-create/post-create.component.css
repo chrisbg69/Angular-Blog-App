@@ -20,7 +20,11 @@ input[type="file"] {
   height: 100%;
 }
 
-h2 {
+mat-card {
+    margin-top: 1rem;
+}
+
+h3 {
   text-align: center;
 
 }
