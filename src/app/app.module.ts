@@ -21,6 +21,8 @@ import { PostListComponent } from "./posts/post-list/post-list.component";
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from "./auth/login/login.component";
+import { SignupComponent } from './auth/signup/signup.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { LoginComponent } from "./auth/login/login.component";
     HeaderComponent,
     FooterComponent,
     PostListComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
