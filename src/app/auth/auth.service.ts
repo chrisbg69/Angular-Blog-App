@@ -5,7 +5,7 @@ import { AuthData } from "./auth-data.model";
 
 @Injectable({ providedIn: "root" })
 export class AuthService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   createUser(email: string, password: string) {
     const AuthData: AuthData = { email: email, password: password };
@@ -15,4 +15,13 @@ export class AuthService {
         console.log(response);
       });
   }
+
+  login(email: string, password: string) {
+    const AuthData: AuthData = { email: email, password: password };
+    this.http.post("http://localhost:3000/api/user/login", AuthData)
+      .subscribe(response => {
+        console.log(response);
+      });
+  }
+
 }
