@@ -1,9 +1,10 @@
 <mat-toolbar color="primary">
   <span>
-    <a routerLink="/">MyMessages</a>
+    <a routerLink="/"><img src="assets/img/logo-nav@2x.png" alt="angular"></a>
   </span>
   <span class="spacer"></span>
   <ul>
+
     <li *ngIf="userIsAuthenticated">
       <!-- <a mdbBtn role="button" routerLink="/create" routerLinkActive="active"color="default" size="sm"  aria-pressed="true" mdbWavesEffect>New Post</a> -->
       <a mat-button routerLink="/create" routerLinkActive="mat-accent">New Post</a>
