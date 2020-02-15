@@ -1,8 +1,15 @@
-.mat-dialog-container {
+::ng-deep .mat-dialog-container {
   background: #ff0000;
 }
 
+h2 {
+  color: #fff;
+}
 
 .mat-body-1 {
   color: #fff;
+}
+
+.mat-button {
+  background-color: #fff;
 }
