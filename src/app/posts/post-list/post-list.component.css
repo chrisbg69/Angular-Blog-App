@@ -28,3 +28,11 @@ mat-paginator {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+h1 {
+  text-align: center;
+  color: #4B42B5;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-decoration: underline overline;
+}
