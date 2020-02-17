@@ -10,8 +10,10 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://chris-mozart:dimmu666borgir777@cluster0-s9zeh.mongodb.net/node-angular?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
+    "mongodb+srv://chris-mozart:" +
+      process.env.MONGO_ATLAS_PW +
+      "@cluster0-s9zeh.mongodb.net/node-angular",
+      { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
     console.log("Connected to database!");
@@ -41,4 +43,3 @@ app.use("/api/posts", postsRoutes);
 app.use("/api/user", userRoutes);
 
 module.exports = app;
-
