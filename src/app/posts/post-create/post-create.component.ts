@@ -84,7 +84,6 @@ export class PostCreateComponent implements OnInit, OnDestroy {
     reader.readAsDataURL(file);
   }
 
-
   onSavePost() {
     if (this.form.invalid) {
       return;
@@ -111,5 +110,3 @@ export class PostCreateComponent implements OnInit, OnDestroy {
     this.authStatusSub.unsubscribe();
   }
 }
-
-

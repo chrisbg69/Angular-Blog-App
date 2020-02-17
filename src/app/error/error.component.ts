@@ -6,6 +6,7 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
   templateUrl: './error.component.html',
+  selector: "app-error",
   styleUrls: ['./error.component.css']
 })
 
