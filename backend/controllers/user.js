@@ -19,7 +19,7 @@ exports.createUser = (req, res, next) => {
       })
       .catch(err => {
         res.status(500).json({
-          message: "Invalid authentication credentials!"
+          message: "Invalid signUp, email must be unique!"
         });
       });
   });
@@ -31,7 +31,7 @@ exports.userLogin = (req, res, next) => {
     .then(user => {
       if (!user) {
         return res.status(401).json({
-          message: "Auth failed"
+          message: "Auth failed, no such user!"
         });
       }
       fetchedUser = user;
@@ -40,7 +40,7 @@ exports.userLogin = (req, res, next) => {
     .then(result => {
       if (!result) {
         return res.status(401).json({
-          message: "Auth failed"
+          message: "Auth failed, wrong password!"
         });
       }
       const token = jwt.sign(
