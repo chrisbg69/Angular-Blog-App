@@ -42,10 +42,7 @@ h3 {
   text-shadow: 2px 2px 4px #000000;
 }
 
-p {
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-}
+
 
 mat-expansion-panel-header {
   font-family: Georgia, serif;
@@ -58,5 +55,9 @@ mat-expansion-panel-header {
   font-style: normal;
   font-variant: normal;
   text-transform: none;
+}
+
+img {
+  border-radius: 3px;
 }
 
