@@ -2,4 +2,5 @@ main {
   width: 60%;
   min-height: 85vh;
   margin: 1rem auto;
+  padding-bottom: 1rem;
 }
