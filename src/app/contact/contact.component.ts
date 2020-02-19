@@ -26,7 +26,7 @@ export class ContactComponent {
 disabledSubmitButton: boolean = true;
 optionsSelect: Array<any>;
 
-  public map: any = { lat: 51.678418, lng: 7.809007 };
+  public map: any = { lat: 42.714920, lng: 23.254118 };
 
   @HostListener('input') oninput() {
 
