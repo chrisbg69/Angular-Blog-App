@@ -1,8 +1,8 @@
 
 <!-- Default form contact -->
-<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<h3>Contact Us</h3>
 
-  <p class="h4 mb-4">Contact us</p>
+<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
   <!-- Name -->
   <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
@@ -19,7 +19,6 @@
     <option value="1" selected>Feedback</option>
     <option value="2">Report a bug</option>
     <option value="3">Feature request</option>
-    <option value="4">Feature request</option>
   </select>
 
   <!-- Message -->
@@ -37,3 +36,8 @@
 
 </form>
 <!-- Default form contact -->
+<hr>
+<agm-map [latitude]="map.lat" [longitude]="map.lng" style="height: 300px">
+  <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
+</agm-map>
+

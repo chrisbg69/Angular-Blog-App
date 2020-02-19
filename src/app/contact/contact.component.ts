@@ -10,18 +10,6 @@ import { Component, HostListener } from '@angular/core';
 
 export class ContactComponent {
 
-
-  contactForm: FormGroup;
-disabledSubmitButton: boolean = true;
-optionsSelect: Array<any>;
-
-  @HostListener('input') oninput() {
-
-  if (this.contactForm.valid) {
-    this.disabledSubmitButton = false;
-    }
-  }
-
   constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
 
   this.contactForm = fb.group({
@@ -31,6 +19,20 @@ optionsSelect: Array<any>;
     'contactFormMessage': ['', Validators.required],
     'contactFormCopy': [''],
     });
+  }
+
+
+  contactForm: FormGroup;
+disabledSubmitButton: boolean = true;
+optionsSelect: Array<any>;
+
+  public map: any = { lat: 51.678418, lng: 7.809007 };
+
+  @HostListener('input') oninput() {
+
+  if (this.contactForm.valid) {
+    this.disabledSubmitButton = false;
+    }
   }
 
   onSubmit() {

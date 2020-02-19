@@ -4,10 +4,11 @@
   </span>
   <span class="spacer"></span>
   <ul>
-
     <li *ngIf="userIsAuthenticated">
-      <!-- <a mdbBtn role="button" routerLink="/create" routerLinkActive="active"color="default" size="sm"  aria-pressed="true" mdbWavesEffect>New Post</a> -->
       <a mat-button routerLink="/create" routerLinkActive="mat-accent"><mat-icon>post_add</mat-icon>New Post</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <a mat-button routerLink="/contact" routerLinkActive="mat-accent"><mat-icon>contact_mail</mat-icon>Contact Us</a>
     </li>
     <li *ngIf="!userIsAuthenticated">
       <a mat-button routerLink="/auth/login" routerLinkActive="mat-accent"><mat-icon>account_circle</mat-icon>Login</a>
