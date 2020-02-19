@@ -7,16 +7,16 @@
 
     <li *ngIf="userIsAuthenticated">
       <!-- <a mdbBtn role="button" routerLink="/create" routerLinkActive="active"color="default" size="sm"  aria-pressed="true" mdbWavesEffect>New Post</a> -->
-      <a mat-button routerLink="/create" routerLinkActive="mat-accent">New Post</a>
+      <a mat-button routerLink="/create" routerLinkActive="mat-accent"><mat-icon>post_add</mat-icon>New Post</a>
     </li>
     <li *ngIf="!userIsAuthenticated">
-      <a mat-button routerLink="/auth/login" routerLinkActive="mat-accent">Login</a>
+      <a mat-button routerLink="/auth/login" routerLinkActive="mat-accent"><mat-icon>account_circle</mat-icon>Login</a>
     </li>
     <li *ngIf="!userIsAuthenticated">
-      <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">Signup</a>
+      <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent"><mat-icon>person_add</mat-icon>Signup</a>
     </li>
     <li *ngIf="userIsAuthenticated">
-      <button mat-button (click)="onLogout()">Logout</button>
+      <button mat-button (click)="onLogout()"><mat-icon>exit_to_app</mat-icon>Logout</button>
     </li>
   </ul>
 
