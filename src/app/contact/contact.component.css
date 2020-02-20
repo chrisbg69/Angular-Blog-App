@@ -5,6 +5,10 @@ h3 {
   margin-bottom: 1rem;
 }
 
+mat-spinner {
+  margin: auto;
+}
+
 form {
   margin-bottom: 1rem;
 }

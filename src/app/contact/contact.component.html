@@ -1,8 +1,8 @@
 
 <!-- Default form contact -->
 <h3>Contact Us</h3>
-
-<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()" *ngIf="!isLoading">
 
   <!-- Name -->
   <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput

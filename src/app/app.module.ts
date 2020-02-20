@@ -17,6 +17,7 @@ import { ErrorComponent } from './error/error.component';
 import { AngularMaterialModule } from "./angular-material.module";
 import { PostsModule } from "./posts/posts.module";
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './notfound/notfound.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

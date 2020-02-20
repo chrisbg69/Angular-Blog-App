@@ -30,8 +30,8 @@ mongoose
     port: 465,
     secure: true,
     auth: {
-      user: ' ', // Enter here email address from which you want to send emails
-      pass: ' ' // Enter here password for email account from which you want to send emails
+      user: '', // Enter here email address from which you want to send emails
+      pass: '' // Enter here password for email account from which you want to send emails
     },
     tls: {
     rejectUnauthorized: false
@@ -64,7 +64,7 @@ app.post('/send', function (req, res) {
   let copyToSender = req.body.contactFormCopy;
 
   let mailOptions = {
-    to: [' '], // Enter here the email address on which you want to send emails from your customers
+    to: [''], // Enter here the email address on which you want to send emails from your customers
     from: senderName,
     subject: messageSubject,
     text: messageText,

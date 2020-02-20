@@ -1,6 +1,8 @@
 import { ConnectionService } from './connection.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../auth/auth.service';
 
 @Component ({
   selector: 'contact-component',
@@ -8,9 +10,11 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 
-export class ContactComponent {
+export class ContactComponent implements OnInit, OnDestroy {
+  isLoading = false;
+  private authStatusSub: Subscription;
 
-  constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
+  constructor(private fb: FormBuilder, private connectionService: ConnectionService, private authService: AuthService) {
 
   this.contactForm = fb.group({
     'contactFormName': ['', Validators.required],
@@ -19,6 +23,14 @@ export class ContactComponent {
     'contactFormMessage': ['', Validators.required],
     'contactFormCopy': [''],
     });
+  }
+
+  ngOnInit() {
+    this.authStatusSub = this.authService.getAuthStatusListener().subscribe(
+      authStatus => {
+        this.isLoading = false;
+      }
+    );
   }
 
 
@@ -43,5 +55,9 @@ optionsSelect: Array<any>;
     }, error => {
       console.log('Error', error);
     });
+  }
+
+  ngOnDestroy() {
+    this.authStatusSub.unsubscribe();
   }
 }
