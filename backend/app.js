@@ -24,19 +24,13 @@ mongoose
   });
 
   const transporter = nodemailer.createTransport({
-
-    host: 'smtp.gmail.com',
-    provider: 'gmail',
-    port: 465,
-    secure: true,
+    host: 'smtp.ethereal.email',
+    port: 587,
     auth: {
-      user: '', // Enter here email address from which you want to send emails
-      pass: '' // Enter here password for email account from which you want to send emails
-    },
-    tls: {
-    rejectUnauthorized: false
+        user: 'jaime94@ethereal.email', //Ethereal is a fake SMTP service, mostly aimed at Nodemailer users  https://ethereal.email/
+        pass: 'MSyEGFnNJzWqFKr98S'
     }
-  });
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -64,7 +58,7 @@ app.post('/send', function (req, res) {
   let copyToSender = req.body.contactFormCopy;
 
   let mailOptions = {
-    to: [''], // Enter here the email address on which you want to send emails from your customers
+    to: ['jaime94@ethereal.email'], // Enter here the email address on which you want to send emails from your customers
     from: senderName,
     subject: messageSubject,
     text: messageText,
