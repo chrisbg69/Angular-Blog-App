@@ -1,5 +1,6 @@
 <mat-spinner *ngIf="isLoading"></mat-spinner>
-<div *ngIf="!isLoading">
-<h1 class="text-center">Page not found</h1>
-
+<div class="not-found" *ngIf="!isLoading">
+  <h1 class="text-center digit">Error 404</h1>
+  <h2 class="text-center">Page not found!</h2>
+  <a mat-stroked-button routerLink="/" ><mat-icon>arrow_back</mat-icon>Back to Home</a>
 </div>
