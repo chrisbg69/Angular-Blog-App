@@ -16,3 +16,7 @@ Run `ng serve` for a dev server. Open second terminal and run `nodemon server.js
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Live version of the app
+
+You can view live demo of the project on `AWS` - [link to AngularBlogApp](http://angularblogapp-env.dmz2nbknvg.us-east-2.elasticbeanstalk.com/)
