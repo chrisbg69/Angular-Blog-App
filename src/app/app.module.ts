@@ -40,7 +40,7 @@ import { NotFoundComponent } from './notfound/notfound.component';
     FormsModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyC5iYY1tEZrEvaOPCv7yeK-tcpUfwFzAqM'
+      apiKey: 'AIzaSyAOtb2prU5uOlHQiQxDgG0O57gq8UJ74Sc'
     })
   ],
   providers: [
