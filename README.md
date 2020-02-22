@@ -10,7 +10,6 @@ This project is simple blogging system, where users can signup and login. Logged
 ## Development server
 
 Download or clone repository. Run `npm install` to install server and client dependencies.
-
 Run `ng serve` for a dev server. Open second terminal and run `nodemon server.js`. Navigate to `http://localhost:4200/` The app will automatically reload if you change any of the source files.
 
 ## Build
