@@ -5,7 +5,7 @@
 
 # AngularBlogApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+This project is simple blogging system, where users can signup and login. Logged users can write, edit and delete own posts. Also they can contact developer via contact form, where is implemented google map by Angular Google Maps (AGM) module.
 
 ## Development server
 
